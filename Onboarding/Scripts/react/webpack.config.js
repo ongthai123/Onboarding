@@ -1,7 +1,10 @@
 ﻿module.exports = {
     context: __dirname,
     entry: {
-        index: __dirname + '/Customer.jsx'
+        index: __dirname + '/Customer.jsx',
+        product: __dirname + '/Product.jsx',
+        store: __dirname + '/Store.jsx',
+        sale: __dirname + '/Sale.jsx'
     },
     output:
     {

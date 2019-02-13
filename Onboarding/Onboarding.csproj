@@ -159,38 +159,39 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SaleController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="DAL\OnboardingContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Customer.cs">
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OnboardingEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnboardingEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OnboardingEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OnboardingEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnboardingEntities.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Product.cs">
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Sale.cs">
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Store.cs">
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TalentOnboarding.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TalentOnboarding.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TalentOnboarding.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TalentOnboarding.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TalentOnboarding.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TalentOnboarding.edmx</DependentUpon>
+      <DependentUpon>OnboardingEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -203,27 +204,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TalentOnboarding.Context.tt">
+    <Content Include="Models\OnboardingEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TalentOnboarding.edmx</DependentUpon>
-      <LastGenOutput>TalentOnboarding.Context.cs</LastGenOutput>
+      <DependentUpon>OnboardingEntities.edmx</DependentUpon>
+      <LastGenOutput>OnboardingEntities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TalentOnboarding.tt">
+    <Content Include="Models\OnboardingEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TalentOnboarding.edmx</DependentUpon>
-      <LastGenOutput>TalentOnboarding.cs</LastGenOutput>
+      <DependentUpon>OnboardingEntities.edmx</DependentUpon>
+      <LastGenOutput>OnboardingEntities.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\TalentOnboarding.edmx">
+    <EntityDeploy Include="Models\OnboardingEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TalentOnboarding.Designer.cs</LastGenOutput>
+      <LastGenOutput>OnboardingEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TalentOnboarding.edmx.diagram">
-      <DependentUpon>TalentOnboarding.edmx</DependentUpon>
+    <Content Include="Models\OnboardingEntities.edmx.diagram">
+      <DependentUpon>OnboardingEntities.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -238,6 +239,12 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\react\Customer.jsx" />
     <Content Include="Scripts\react\dist\index.bundle.js" />
+    <Content Include="Scripts\react\dist\product.bundle.js" />
+    <Content Include="Scripts\react\dist\sale.bundle.js" />
+    <Content Include="Scripts\react\dist\store.bundle.js" />
+    <Content Include="Scripts\react\Product.jsx" />
+    <Content Include="Scripts\react\Sale.jsx" />
+    <Content Include="Scripts\react\Store.jsx" />
     <Content Include="Scripts\react\webpack.config.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

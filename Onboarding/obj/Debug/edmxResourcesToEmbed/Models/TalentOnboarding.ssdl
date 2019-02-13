@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nchar" MaxLength="30" Nullable="false" />
     <Property Name="Address" Type="nchar" MaxLength="30" Nullable="false" />
   </EntityType>
@@ -12,15 +12,15 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nchar" MaxLength="30" Nullable="false" />
-    <Property Name="Price" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Sales">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ProductId" Type="int" Nullable="false" />
     <Property Name="CustomerId" Type="int" Nullable="false" />
     <Property Name="StoreId" Type="int" Nullable="false" />
@@ -30,7 +30,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nchar" MaxLength="30" Nullable="false" />
     <Property Name="Address" Type="nchar" MaxLength="30" Nullable="false" />
   </EntityType>

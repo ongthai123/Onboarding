@@ -23,5 +23,9 @@
     "semantic-ui": "^2.4.2",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
   }
 }
